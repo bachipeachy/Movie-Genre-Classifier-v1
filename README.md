@@ -1,17 +1,32 @@
 # Multi-Label-Text-Classifier
-This repository contains multi- label text classifiers developed in Tensorflow
+This repository contains multi- label text classifiers developed in Tensorflow 2.1 using custom modules
+
 It is based on a blog post by Zuzanna Deutschman https://towardsdatascience.com/multi-label-text-classification-5c505fdedca8
 
 ## Training Dataset
-Using "CMU Movie Summary Corpus" open dataset. You can download the dataset directly from
+Using "CMU Movie Summary Corpus" open dataset.
+You can download the dataset directly from
 http://www.cs.cmu.edu/~ark/personas/data/MovieSummaries.tar.gz
 This dataset contains multiple files, but we’ll need only two of them:
-movie.metadata.tsv: Metadata for 81,741 movies, extracted from the November 4, 2012 dump of Freebase. The movie genre tags are available in this file
-plot_summaries.txt: Plot summaries of 42,306 movies extracted from the November 2, 2012 dump of English-language Wikipedia. Each line contains the Wikipedia movie ID (which indexes into movie.metadata.tsv) followed by the plot summary
+
+movie.metadata.tsv: Metadata for 81,741 movies, extracted from the November 4, 2012 dump of Freebase.
+
+The movie genre tags are available in this file
+
+plot_summaries.txt: Plot summaries of 42,306 movies extracted from the November 2, 2012 dump of English-language Wikipedia.
+
+Each line contains the Wikipedia movie ID (which indexes into movie.metadata.tsv) followed by the plot summary
+
+These files are too big to be uploaded here
+
+The dataset has been sliced by 99% to reduce training time to enable quick testing
+
+About 420 samples are used for training the model
 
 ## Development Environment
-The Jupyter Notebook running on Mac High Sierra in a virtual environment
-The Python Library Modules (not all are required) include:
+The Jupyter Notebook running on Mac High Sierra in ML development virtual environment
+The Python Library Modules in my ML venv "deep" include:
+(NOTE: not all modules are required)
 
 (deep) mbp:~ bp$ pip list
 
