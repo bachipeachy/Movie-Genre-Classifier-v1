@@ -1,4 +1,4 @@
-# Multi-Label-Text-Classifier
+# Movie-Genre-Classifier-v1
 This repository contains multi- label text classifiers developed in Tensorflow 2.1 using custom modules
 
 It is based on a blog post by Zuzanna Deutschman https://towardsdatascience.com/multi-label-text-classification-5c505fdedca8
